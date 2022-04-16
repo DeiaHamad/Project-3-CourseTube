@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+  border-radius: 10px;
+}
+
+:root {
+  --color-primary: white;
+  --color-light-grey: rgba(230, 230, 230, 0.5);
+  --color-medium-grey: rgba(190, 190, 190, 0.5);
+  --color-heavy-grey: rgba(96, 96, 96, 0.5);
+  --color-light-blue: rgba(145, 161, 255, 0.5);
+  --color-heavy-blue: rgba(32, 65, 252, 1);
+}

@@ -1,0 +1,142 @@
+#web-page {
+  padding-top: 60px;
+  overflow: auto;
+  height: 100vh;
+}
+
+#web-page:hover::-webkit-scrollbar-thumb{
+  background-color: grey;
+}
+
+.web-page-min {
+  padding-left: 200px;
+}
+
+.web-page-max {
+  padding-left: 100px;
+}
+
+#videos-container {
+  padding: 10px;
+  background-color: var(--color-light);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.top-section {
+  position: relative;
+}
+
+.video-duration {
+  color: white;
+  position: absolute;
+  border: 1px solid black;
+  background-color: black;
+  bottom: 8px;
+  right: 4px;
+  padding: 0 2px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+.top-section img {
+  width: 100%;
+}
+
+.bottom-section {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  font-family: 'Roboto', sans-serif;
+}
+
+.left-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-bottom img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.right-bottom {
+  padding-left: 5px;
+}
+
+.video-title {
+  font-size: 1rem;
+  line-height: 20px;
+  padding-bottom: 12px;
+  min-width: 100px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.channel-name {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.channel-name img {
+  width: 18px;
+  padding-left: 5px;
+}
+
+.views {
+  font-size: 0.8rem;
+  padding-bottom: 2px;
+}
+
+.video-title a:hover {
+  color: black;
+}
+
+.channel-name a:link,
+.channel-name a:visited,
+.views a:link, 
+.views a:visited {
+  color: rgb(126, 126, 126);
+}
+
+.channel-name a:hover {
+  color: rgb(63, 63, 63);
+}
+
+@media (max-width: 1060px) {
+  #videos-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  #videos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  #videos-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:450px) {
+  #web-page {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width:300px) {
+  #web-page {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

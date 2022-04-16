@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CourseTube</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/video.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <meta name="description" content="This is CourseTube website">
+  <meta name="keywords" content="my courses, coursetube, course tube, course list">
+  <meta name="author" content="Deia ElDin">
+</head>
+
+<body>
+  <div id="header" class="flex">
+    <div id="left-header" class="flex">
+      <div id="toggle-btn-container" class="flex">
+        <button id="toggle-btn">
+          <img src="images/menu.png" alt="menu image">
+        </button>
+      </div>
+      <div id="logo-container" class="flex" title="CourseTube Home">
+        <img src="images/logo.png" alt="logo image">
+        <p>CourseTube</p>
+      </div>
+    </div>
+    <div id="middle-header" class="flex">
+      <div id="back-arrow">
+        <button>
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+      </div>
+      <input id="search-bar" type="text" placeholder="Search">
+      <div id="search-btn-container" class="flex">
+        <button id="search-btn" title="Search">
+          <img src="images/search.png" alt="search image">
+        </button>
+      </div>
+      <div id="search-mic-container" class="flex">
+        <button id="mic-btn" title="Search with your voice">
+          <img id="mic-img" src="images/mic-off.png" alt="mic image">
+        </button>
+      </div>
+      <button id="search-toggle-btn">
+        <img src="images/search.png" alt="search image">
+      </button>
+    </div>
+    <div id="right-header" class="flex">
+      <div id="contact-me-container">
+        <button id="contact-me-btn" class="flex" title="Contact me">
+          <img src="images/contact-me.png" alt="contact me image">
+        </button>
+      </div>
+      <div id="deia-container" class="flex">
+        <img src="images/Deia.jpg" alt="Deia image">
+      </div>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar-on flex">
+    <div id="home-container" class="container" title="Home">
+      <div class="main-icon flex">
+        <img src="images/home.png" alt="home image">
+      </div>
+      <div class="text flex">Home</div>
+    </div>
+    <div id="courses-container" class="container">
+
+      <div id="title" title="Courses">
+        <div class="main-icon flex">
+          <img src="images/courses.png" alt="courses image">
+        </div>
+        <div class="text flex">Courses</div>
+      </div>
+      
+      <div id="content">
+        <div id="webDevelopment" class="course">
+          <div class="secondary-icon">
+            <img src="images/Web Development.png" alt="web development image">
+          </div>
+          <div class="text flex">Web Development</div>
+        </div>
+
+        <div id="htmlCssJavascript" class="course">
+          <div class="secondary-icon">
+            <img src="images/html & css & javascript5.png" alt="html css javascript image">
+          </div>
+          <div class="text flex">Html Css JavaScript</div>
+        </div>
+
+        <div id="htmlCss" class="course">
+          <div class="secondary-icon">
+            <img src="images/html & css.png" alt="html & css image">
+          </div>
+          <div class="text flex">Html Css</div>
+        </div>
+
+        <div id="javascript" class="course">
+          <div class="secondary-icon">
+            <img src="images/javascript.png" alt="javascript image">
+          </div>
+          <div class="text flex">JavaScript</div>
+        </div>
+
+        <div id="html" class="course">
+          <div class="secondary-icon">
+            <img src="images/html.png" alt="html image">
+          </div>
+          <div class="text flex">Html</div>
+        </div>
+
+        <div id="css" class="course">
+          <div class="secondary-icon">
+            <img src="images/css.png" alt="css image">
+          </div>
+          <div class="text flex">Css</div>
+        </div>
+
+        <div id="python" class="course">
+          <div class="secondary-icon">
+            <img src="images/python.png" alt="python image">
+          </div>
+          <div class="text flex">Python</div>
+        </div>
+      </div>
+    </div>
+    <div id="instructors-container" class="container">
+      <div id="title" title="Instructors">
+        <div class="main-icon flex">
+          <img src="images/instructor.png" alt="instructors image">
+        </div>
+        <div class="text flex">Instructors</div>
+      </div>
+      <div id="content"></div>
+    </div>
+  </div>
+
+  <div id ="web-page" class="web-page-min">
+    <!-- JavaScript File -->
+    <div id="videos-container"></div>
+  </div>
+  
+  <div id="contact-section" class="contact-min">
+    <div class="contact-item">
+      <div class="icon flex">
+        <i class="fa-solid fa-location-dot flex"></i>
+        Location:
+      </div>
+      <p>Abu Dhabi &minus; United Arab Emirates</p>
+    </div>
+    <div class="contact-item">
+      <div class="icon flex">
+        <i class="fa-solid fa-user-graduate flex"></i>
+        Education:
+      </div>
+      <p>Institute of Aviation Engineering & Technology</p>
+    </div>
+    <div class="contact-item">
+      <div class="icon flex">
+        <i class="fa-solid fa-language flex"></i>
+        Language:
+      </div>
+      <p>English, Arabic</p>
+    </div>
+    <div class="contact-item">
+      <div class="icon flex">
+        <i class="fa-solid fa-envelope flex"></i>
+        Email:
+      </div>
+      <p>EngDeiaaEldin@gmail.com</p>
+    </div>
+    <div class="contact-item">
+      <div class="icon flex">
+        <i class="fa-solid fa-mobile-button flex"></i>
+        Phone Number:
+      </div>
+      <p>+97150 789 0072</p>
+    </div>
+  </div>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
