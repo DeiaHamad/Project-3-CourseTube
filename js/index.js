@@ -572,9 +572,8 @@ backArrorwBtn.on("click", () => {
 
 // Contact me Button
 contactMeIcon.on("click", () => {
-  console.log(true);
-  webPage.hide("slow");
-  contactMeSection.show("slow");
+  webPage.toggle("slow");
+  contactMeSection.toggle("slow");
 });
 
 // Instructors Button (sidebar) => must be set after calling courseTube();
